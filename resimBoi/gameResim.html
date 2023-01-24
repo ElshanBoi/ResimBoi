@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/pen.png">
+    <link rel="stylesheet" href="./css/game.css">
+    <script src="./js/client-oop/lib/socket.io-client/dist/socket.io.js"></script>
+    <script src="./js/client-oop/lib/sms-hewarts-client/sms-hewarts-client.js"></script>
+    
+    <script src="./js/gameResim.js"></script>
+    <title>GAME</title>
+</head>
+<body>
+    
+    <div class="header">
+        <div class="left">
+            <img src="./img/ses-music-closed.png" class="ses">
+            <img src="./img/logoss.PNG" class="logo">
+        </div>
+        <div class="right">
+            <a href="#" target="_blank">
+                <img src="./img/ads.png" class="reklam">
+            </a>
+        </div>
+    </div>
+
+    <div class="game">
+        <div class="up">
+            <div class="time">
+                <img src="./img/alagm.png">
+                <p>ZAMAN: <b>60</b></p>
+            </div>
+            <div class="task">
+                <b id="task"></b>
+            </div>
+        </div>
+        <div class="center">
+            <div class="users">
+
+                <div id="user-list" class="user-list"></div>
+
+                <input id="pass" class="pass" type="button" value="PAS KEC"/>
+
+            </div>
+
+            <div class="drag">
+                <canvas id="border"></canvas>
+            </div>
+
+            <div class="mesj">
+                <div id="txt-list" class="txt"></div>
+                <div class="inp">
+<input class="t" id="txt" type="text" placeholder="cavabı yaz">
+<input class="b" id="btn" type="button" value=">>>">
+                </div>
+            </div>
+        </div>
+
+        <div class="down">
+            <div class="colors">
+                <div id="reng" class="color"></div>
+                <ul id="rengler"></ul>
+            </div>
+
+            <div class="nav">
+               <input type="button" id="qelem">
+               <input type="button" id="pozan">
+               <input type="button" id="sil">
+               <input type="button" id="sm">
+               <input type="button" id="lg">
+               <input type="button" id="md">
+               <input type="button" id="xl">
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

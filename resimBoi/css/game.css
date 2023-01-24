@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    user-select: none;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    cursor: pointer;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #C1C1C1;
+    border-radius: 5px;
+    cursor: pointer;
+}
+::-webkit-scrollbar-thumb {
+    background: #C1C1C1;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color:#5a9424 ;
+}
+.header{
+    width: 860px;
+    height: 60px;
+    /* background-color: aqua; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.left{
+    width: 50%;
+    height: 60px;
+    /* background-color: brown; */
+    float: left;
+}
+.ses{
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.logo{
+    width: auto;
+    height: 40px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.right{
+    width: 50%;
+    height: 60px;
+    /* background-color: blue; */
+    float: right;
+}
+.right a{
+    text-decoration: none;
+}
+.reklam{
+    width: 100%;
+    height: 60px;
+}
+
+.game{
+    width: 860px;
+    height: auto;
+    /* background-color: aqua; */
+    margin-left: auto;
+    margin-right: auto;
+}
+.up{
+    width: 100%;
+    height: 30px;
+    background-color: #EDEDED;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.time{
+    width: 120px;
+    height: 30px;
+    /* background-color: blueviolet; */
+    float: left;
+    margin-left: 10px;
+}
+.time img{
+    width: 25px;
+    height: 25px;
+    margin-top: 2.5px;
+    float: left;
+}
+.time p{
+    float: right;
+    line-height: 30px;
+}
+.time p b{
+    color: #245194 ;
+}
+
+.task{
+    line-height: 30px;
+    text-align: center;
+}
+.task b{
+    color: #245194 ;
+}
+
+.center{
+    width: 100%;
+    height: 400px;
+    /* background-color: aqua; */
+}
+.users{
+    width: 200px;
+    height: 400px;
+    /* background-color: #FFFDDD; */
+    float: left;
+   
+}
+
+.user-list{
+    width: 100%;
+    height: 330px;
+    background-color: #c8c7c7;
+    overflow: auto;
+    border-radius: 5px;
+}
+.user{
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    
+}
+.user:nth-of-type(2n){
+    background-color: #EEEEEE;
+}
+.user:nth-of-type(2n-1){
+    background-color: #FAFAFA;
+}
+.r{
+    width: 50px;
+    height: 40px;
+    line-height:40px ;
+    text-indent: 3px;
+    float: left;
+    /* background-color: blue; */
+}
+.r b{
+    color: #245194;
+}
+.i{
+   width: calc(100% - 100px);
+   height: 40px;
+   float: left;
+   text-align: center;
+   font-family: Arial, Helvetica, sans-serif;
+}
+.i h5{
+    line-height: 20px;
+    font-size: 12px;
+    color: red;
+}
+.i p{
+    font-size: 12px;
+    color: #9664C8;
+}
+.i p u{
+    color: #9664C8;
+}
+.p{
+    width: 50px;
+    height: 40px;
+    float: right;
+    /* background-color: blue;  */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+}
+
+.user:nth-of-type(2n) .p{
+    background-image: url(../img/profile-0.png);
+}
+.user:nth-of-type(2n-1) .p{
+    background-image: url(../img/profile-1.png);
+}
+
+.pass{
+    width: 150px;
+    height: 25px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #B0BACA;
+    background-color: #A88C66;
+}
+
+
+.drag{
+    width: 400px;
+    height: 400px;
+    background-color: #FEFEFE;
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.mesj{
+    width: 250px;
+    height: 400px;
+    /* background-color: #E8E8E8; */
+    float: right;
+}
+.txt{
+    width: 96%;
+    height: calc(400px - 40px);
+    background-color: #E9E9E9;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #9CA1B6;
+    margin-top: 2px;
+    border-radius: 5px;
+    overflow: auto;
+}
+.txt p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-indent: 5px;
+}
+.txt p:nth-of-type(odd){
+    background-color: #FAFAFA;
+}
+.txt p:nth-of-type(even){
+    background-color: #EEEEEE ;
+}
+
+.txt p b{
+    color: red;
+}
+.txt p i{
+    color: blue;
+}
+.inp{
+    width: 96%;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFFFFF;
+    margin-top: 3px;
+    border: 1px solid #9CA1B6;;
+    border-radius: 5px;
+}
+.inp .t{
+    width: calc(100% - 45px);
+    height: 30px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    float: left;
+    color: #9CA1B6;
+    text-indent: 10px;
+    border-right: 1px solid #9CA1B6;
+}
+.inp .b{
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+    float: right;
+    background-color: transparent;
+    color: #9CA1B6;
+}
+
+
+.down{
+    width: 650px;
+    height: 60px;
+    /* background-color: aqua; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+.colors{
+    width: 300px;
+    height: 50px;
+    /* background-color: blue; */
+    margin-top: 5px;
+    float: left;
+}
+.color{
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    border: 1px solid black;
+    float: left;
+}
+.colors ul{
+    width:242px;
+    height: 44px;
+    margin-top: 3px;
+    list-style: none;
+    /* background-color: beige; */
+    float: right;
+}
+.colors ul li{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border: 1px solid black;
+    float: left;
+    list-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #FFFFFF;
+}
+
+.nav{
+    width: 320px;
+    height: 50px;
+    /* background-color: pink; */
+    float: right;
+    margin-top: 5px;
+}
+.nav input{
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+    float: left;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.select{
+    background-color:#9664C8 !important;
+}
+#qelem{
+    background-image: url(../img/pen.png);
+}
+#pozan{
+    background-image: url(../img/rubber.png);
+}
+#sil{
+    background-image: url(../img/clear-picture.png);
+}
+#sm{
+    background-image: url(../img/sm.png);
+}
+#lg{
+    background-image: url(../img/lg.png);
+}
+#md{
+    background-image: url(../img/md.png);
+}
+#xl{
+    background-image: url(../img/xl.png);
+}

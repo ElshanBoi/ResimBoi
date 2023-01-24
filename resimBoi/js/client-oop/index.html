@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html class="html">
+
+<head>
+    <meta charset="utf-8">
+
+    <script type="text/javascript" src="./lib/jQuery/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="./lib/socket.io-client/dist/socket.io.js"></script>
+
+    <script type="text/javascript" src="./lib/sms-hewarts-client/sms-hewarts-client.js"></script>
+
+
+    <script>
+        
+        
+        const SMS=new smsHEWarts((data)=>{
+            
+            /*
+            connection olanda calisan callback data geri donen deyer 
+            */
+            console.log(data);
+        },(data)=>{
+            
+            /*
+            socketden kimse ayrilanda bas veren olaylar data gelen deyer
+            */
+            console.log(data);
+        });
+        
+        
+        SMS.Message((data)=>{
+            /*
+            gelen mesajlari qebul edib uzerinde emeliyyat aparan callback
+            */
+            console.log('mesaj==',data.data)
+            
+        })
+        
+        $(document).ready(() => {
+
+            let ad = prompt('adi yazin');
+
+            $('button').click(() => {
+
+
+                let v = $(':text').val();
+
+                let mesaj = {"ad": ad,"mesaj": v};
+
+                /*
+                sms gonderen method
+                */
+                SMS.sendSMS(mesaj);
+
+            });
+
+        });
+
+    </script>
+
+</head>
+
+<body>
+
+    <div style="width: 300px;height: 300px;border:2px solid;">
+
+    </div>
+    <br />
+    <input type="text" />
+    <button>Button</button>
+
+</body>
+
+</html>
